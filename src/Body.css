@@ -1,0 +1,40 @@
+.body {
+  background-color: #111;
+  height: 100%;
+  width: 100%;
+  margin-left: 20px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.body__posters {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-content: space-between;
+  padding: 20px;
+  padding-top: 150px;
+}
+
+.body__posters > * {
+  flex: 0 0 7%;
+}
+
+.body__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.body__poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 137px;
+  /* margin-right: 10px; */
+  transition: transform 450ms;
+  padding-top: 20px;
+  padding-right: 10px;
+}
+
+.body__poster:hover {
+  transform: scale(1.09);
+}

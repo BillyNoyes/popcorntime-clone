@@ -1,10 +1,14 @@
 import React from "react";
 import "./App.css";
+import Nav from "./Nav";
+import Body from "./Body";
+import requests from "./requests";
 
 function App() {
   return (
     <div className="app">
-      <h1>Popcorn Time</h1>
+      <Nav />
+      <Body fetchUrl={requests.fetchNetflixOriginals} />
     </div>
   );
 }
